@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".comuns.RegisterActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sign_up_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:text="@string/sign_up_title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/register_edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="24dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:textColor="@color/black"
+        android:paddingHorizontal="8dp"/>
+
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/register_edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/register_edt_email"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_pass"
+        android:textColor="@color/black"
+        android:paddingHorizontal="8dp"/>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_edt_pass"
+        android:text="@string/btn_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>

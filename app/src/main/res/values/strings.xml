@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LojaVirtual</string>
+    <string name="title">Loja Virtual</string>
+    <string name="hint_email">email</string>
+    <string name="btn_text">Go To Login Activity</string>
+    <string name="hint_pass">pass</string>
+    <string name="sign_up_title">Sign Up</string>
+    <string name="btn_login_activity_text">Do Login</string>
+</resources>
