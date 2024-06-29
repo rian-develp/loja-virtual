@@ -17,7 +17,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        var resp : Boolean
         val edtEmailLoginActivity: EditText = findViewById(R.id.edt_email)
         val edtPassLoginActivity: EditText = findViewById(R.id.edt_pass)
         val button: Button = findViewById(R.id.button)
@@ -33,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
 
                 Toast.makeText(this, "Por favor insira seu email e senha", Toast.LENGTH_SHORT).show()
             } else {
-                resp = db.loginValidate(email, pass)
+                val resp = db.loginValidate(email, pass)
                 if(resp){
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)

@@ -1,7 +1,6 @@
 package com.example.lojavirtual.database
 
 import com.example.lojavirtual.model.Recipes
-import com.example.lojavirtual.model.User
 
 class MyDatabase: MyDatabaseImpl {
 
@@ -35,16 +34,16 @@ class MyDatabase: MyDatabaseImpl {
 
     fun loginValidate(data1: String, data2: String): Boolean{
 
-        var resp: Boolean = false
+        var resp = false
 
-        for (i in 0.. userData.size - 1){
-            resp = data1.equals(userData.get(i)) && data2.equals(userData.get(i))
+        for (i in 0 until userData.size){
+            if(data1.equals(userData.get(i)) && data2.equals(userData.get(i))){
+                resp = true
+            } else {
+                resp = false
+            }
         }
 
         return resp
-    }
-
-    fun registerValidate(){
-
     }
 }

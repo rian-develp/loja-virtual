@@ -26,7 +26,7 @@ class RegisterActivity : AppCompatActivity() {
             } else {
                 val email: String = edtEmail.text.toString().trim()
                 val pass: String = edtPass.text.toString().trim()
-//                database.saveDataUser(data = email, data2 = pass)
+                database.saveDataUser(data = email, data2 = pass)
                 val intent = Intent(this, LoginActivity::class.java)
                 intent.putExtra("register_email", email)
                 intent.putExtra("register_pass", pass)
